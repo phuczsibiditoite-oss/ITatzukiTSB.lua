@@ -1,0 +1,187 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "ITatzuki Hub | TSB",
+   LoadingTitle = "The Strongest Battleground",
+   LoadingSubtitle = "by ITatzuki",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil,
+      FileName = "ITatzuki Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+   },
+   KeySystem = true,
+   KeySettings = {
+      Title = "Key | ITatzuki Hub",
+      Subtitle = "Hệ thống key",
+      Note = "Key Trong Discord Server",
+      FileName = "ITatzukiTSBHub",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"TrongGay"}
+   }
+})
+
+-- 🏠 Tab main
+local MainTab = Window:CreateTab("Main", nil)
+local MainSection = MainTab:CreateSection("Main")
+
+local VersionLabel = MainTab:CreateLabel("Phiên bản: 1.0.0")
+local VersionLabel = MainTab:CreateLabel("Script bởi ITatzuki")
+local VersionLabel = MainTab:CreateLabel("Thằng Hack Mày Là Gay!")
+
+--Tab Helper
+local HelperTab = Window:CreateTab("Helper", nil)
+local TechSection = HelperTab:CreateSection("Helper")
+
+local Button = HelperTab:CreateButton({
+   Name = "Auto Upercut",
+   Callback = function()
+      Rayfield:Notify({
+         Title = "Auto Upercut",
+         Content = "🔄 Đang tải script...",
+         Duration = 2,
+      })
+
+      task.wait(1)
+
+      local success, err = pcall(function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/AutoUp/refs/heads/main/Protected_7487729880325869.lua"))()
+      end)
+
+      if success then
+         Rayfield:Notify({
+            Title = "Auto Upercut",
+            Content = "✅ Script đã chạy thành công!",
+            Duration = 3,
+         })
+      else
+         Rayfield:Notify({
+            Title = "Auto Upercut",
+            Content = "❌ Lỗi khi chạy script:\n" .. tostring(err),
+            Duration = 6,
+         })
+      end
+   end,
+})
+
+
+
+
+
+
+local Button = HelperTab:CreateButton({
+   Name = "CamLock",
+   Callback = function()
+      Rayfield:Notify({
+         Title = "CamLock",
+         Content = "🔄 Đang tải script...",
+         Duration = 2,
+      })
+
+      task.wait(1)
+
+      local success, err = pcall(function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Mark22028-2ndAcc/Scripts/refs/heads/main/OPCamlock.lua"))()
+getgenv().CamlockSetKeybind("C")
+      end)
+
+      if success then
+         Rayfield:Notify({
+            Title = "CamLock",
+            Content = "✅ Script đã chạy thành công!",
+            Duration = 3,
+         })
+      else
+         Rayfield:Notify({
+            Title = "CamLock",
+            Content = "❌ Lỗi khi chạy script:\n" .. tostring(err),
+            Duration = 6,
+         })
+      end
+   end,
+})
+
+
+
+
+
+
+
+
+-- ⚙️ Tab Tech
+local TechTab = Window:CreateTab("Tech", nil)
+local TechSection = TechTab:CreateSection("Tech")
+
+local Button = TechTab:CreateButton({
+   Name = "Kiba Tech V4",
+   Callback = function()
+      Rayfield:Notify({
+         Title = "Kiba Tech V4",
+         Content = "🔄 Đang tải script...",
+         Duration = 2,
+      })
+
+      task.wait(1)
+
+      local success, err = pcall(function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/ExoticJn/refs/heads/main/Kibav4"))()
+      end)
+
+      if success then
+         Rayfield:Notify({
+            Title = "Kiba Tech V4",
+            Content = "✅ Script đã chạy thành công!",
+            Duration = 3,
+         })
+      else
+         Rayfield:Notify({
+            Title = "Kiba Tech V4",
+            Content = "❌ Lỗi khi chạy script:\n" .. tostring(err),
+            Duration = 6,
+         })
+      end
+   end,
+})
+
+
+
+
+
+
+
+
+
+local Button = TechTab:CreateButton({
+   Name = "Kyoto",
+   Callback = function()
+      Rayfield:Notify({
+         Title = "Kyoto",
+         Content = "🔄 Đang tải script...",
+         Duration = 2,
+      })
+
+      task.wait(1)
+
+      local success, err = pcall(function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/ExoticJn/refs/heads/main/AutoKyotoV2"))()
+      end)
+
+      if success then
+         Rayfield:Notify({
+            Title = "Kyoto",
+            Content = "✅ Script đã chạy thành công!",
+            Duration = 3,
+         })
+      else
+         Rayfield:Notify({
+            Title = "Kyoto",
+            Content = "❌ Lỗi khi chạy script:\n" .. tostring(err),
+            Duration = 6,
+         })
+      end
+   end,
+})
